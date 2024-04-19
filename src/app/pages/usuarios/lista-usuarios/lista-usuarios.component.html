@@ -1,33 +1,32 @@
-<mat-table [dataSource]="dataSource">
-    <ng-container matColumnDef="id">
-      <mat-header-cell *matHeaderCellDef> ID </mat-header-cell>
-      <mat-cell *matCellDef="let element"> {{element.id}} </mat-cell>
-    </ng-container>
+<div class="row">
+    <mat-table [dataSource]="dataSource">
+        <ng-container matColumnDef="id">
+          <mat-header-cell *matHeaderCellDef> ID </mat-header-cell>
+          <mat-cell *matCellDef="let element"> {{element.id}} </mat-cell>
+        </ng-container>
+        
+        <ng-container matColumnDef="name">
+          <mat-header-cell *matHeaderCellDef> Nombre </mat-header-cell>
+          <mat-cell *matCellDef="let element"> {{element.name}} </mat-cell>
+        </ng-container>
+        
+        <ng-container matColumnDef="phone">
+          <mat-header-cell *matHeaderCellDef> Teléfono </mat-header-cell>
+          <mat-cell *matCellDef="let element"> {{element.phone}} </mat-cell>
+        </ng-container>
     
-    <ng-container matColumnDef="name">
-      <mat-header-cell *matHeaderCellDef> Nombre </mat-header-cell>
-      <mat-cell *matCellDef="let element"> {{element.name}} </mat-cell>
-    </ng-container>
-    
-    <ng-container matColumnDef="phone">
-      <mat-header-cell *matHeaderCellDef> Teléfono </mat-header-cell>
-      <mat-cell *matCellDef="let element"> {{element.phone}} </mat-cell>
-    </ng-container>
-
-    <ng-container matColumnDef="username">
-        <mat-header-cell *matHeaderCellDef> Usuario </mat-header-cell>
-        <mat-cell *matCellDef="let element"> {{element.username}} </mat-cell>
-    </ng-container>
-    
-    <ng-container matColumnDef="email">
-        <mat-header-cell *matHeaderCellDef> Correo </mat-header-cell>
-        <mat-cell *matCellDef="let element"> {{element.email}} </mat-cell>
-    </ng-container>
-    
-    <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
-    <mat-row *matRowDef="let element; columns: displayedColumns;" (click)="verDetalle(element.id)"></mat-row>
-  </mat-table>
-  
-  <mat-paginator [pageSizeOptions]="[2,8,10]" [pageSize]="8" showFirstLastButtons></mat-paginator>
-  
-  
+        <ng-container matColumnDef="username">
+            <mat-header-cell *matHeaderCellDef> Usuario </mat-header-cell>
+            <mat-cell *matCellDef="let element"> {{element.username}} </mat-cell>
+        </ng-container>
+        
+        <ng-container matColumnDef="email">
+            <mat-header-cell *matHeaderCellDef> Correo </mat-header-cell>
+            <mat-cell *matCellDef="let element"> {{element.email}} </mat-cell>
+        </ng-container>
+        
+        <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+        <mat-row *matRowDef="let element; columns: displayedColumns;" (click)="verDetalle(element.id)"></mat-row>
+      </mat-table>
+      <mat-paginator [pageSizeOptions]="[2,8,10]" [pageSize]="8" showFirstLastButtons></mat-paginator>
+</div>
