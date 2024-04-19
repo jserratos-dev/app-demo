@@ -10,7 +10,7 @@ const url = environment.wsUrl ;
 })
 
 export class SharedService {
-    private showSidebarSubject = new BehaviorSubject<boolean>(false);
+    private showSidebarSubject = new BehaviorSubject<boolean>(true);
 
     showSidebar$ = this.showSidebarSubject.asObservable();
 

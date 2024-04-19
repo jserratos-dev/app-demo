@@ -5,9 +5,9 @@ import { SharedService } from '../../services/shared/menu.service';
   selector: 'app-sidebar',
   templateUrl: './sidebar.component.html',
 })
-export class SidebarComponent {
+export class SidebarComponent  {
 
-  showSidebar = false;
+  showSidebar = true;
   constructor(private sharedService: SharedService) { }
 
   ngOnInit(): void {
