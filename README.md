@@ -2,7 +2,7 @@
 
 Para ver la aplicación en vivo, haz clic en el siguiente enlace:
 
-[Ir a la aplicación de este repositorio](https://jserratos-dev.github.io/usuarios)
+[Ir a la aplicación de este repositorio](https://jserratos-dev.github.io/app-demo)
 
 # AppDemo
 
